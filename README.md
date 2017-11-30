@@ -2,27 +2,12 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.3.
 
-## Development server
+# Por si tira errores por falta de importaciones.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+o si tira un error como este: "ERROR in Metadata version mismatch for module C:/Users/Emi/Desktop/AngularDpsPrimeNg/node_modules/primeng/components/common/api.d.ts, found version 4, expected 3, resolving symbol AppModule in C:/Users/Emi/Desktop/AngularDpsPrimeNg/src/app/app.module.ts, resolving symbol AppModule in C:/Users/Emi/Desktop/AngularDpsPrimeNg/src/app/app.module.ts"
 
-## Code scaffolding
+Hacer cualquier tipo de cambio en el proyecto, como agregar un "hola mundo" en el app.component.html, guardar, y cuando recompila se soluciona (al menos para hacerlo andar y probar controles de PrimeNg).
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
+Link de PrimeNg: https://www.primefaces.org/primeng/#/
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+PD: Asi lo solucionamos en clase con el profe :P
