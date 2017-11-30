@@ -1,0 +1,77 @@
+<h1>
+  {{title}}
+</h1>
+
+<p-growl [value]="msgs"></p-growl>
+
+<p-carousel headerText="Tecnologias" [value]="Tecnologias">
+    <ng-template let-elemento pTemplate="item">
+        <div class="ui-grid ui-grid-responsive">
+            <div class="ui-grid-row">
+                <div class="ui-grid-col-12"><img src="assets/fotos/{{elemento.imagen}}.jpg" width="60"   height ="60"></div>
+            </div>
+            <div class="ui-grid-row">
+                <div class="ui-grid-col-6">tecnologia</div>
+                <div class="ui-grid-col-6">{{elemento.tecnologia}}</div>
+            </div>
+            <div class="ui-grid-row">
+                <div class="ui-grid-col-6">descripción</div>
+                <div class="ui-grid-col-6">{{elemento.nombre}}</div>
+            </div>
+            <div class="ui-grid-row">
+                <div class="ui-grid-col-6">tipo</div>
+                <div class="ui-grid-col-6">{{elemento.tipo}}</div>
+            </div>
+            <div class="ui-grid-row">
+                <div class="ui-grid-col-12">
+                    <button type="button" pButton icon="fa-search" (click)="SeleccionDeElemento(elemento)"></button>
+                </div>
+            </div>
+        </div>
+    </ng-template>
+</p-carousel>
+
+<h3>color</h3>
+<p-colorPicker [(ngModel)]="color"></p-colorPicker>
+<h3>fecha</h3>
+<p-calendar [(ngModel)]="value"></p-calendar>
+
+<h3>Que nota te sacaste???</h3>
+<p-accordion [multiple]="true">
+    <p-accordionTab header="No llego">
+      2(dos)
+    </p-accordionTab>
+    <p-accordionTab header="Raspando">
+       5 (cinco)
+    </p-accordionTab>
+    <p-accordionTab header="Bien">
+       8 (ocho)  
+    </p-accordionTab>
+     <p-accordionTab header="Excelente" [disabled]="true">
+       UN 10 (diez)
+    </p-accordionTab>
+</p-accordion>
+
+<p-sidebar [(visible)]="display" position="right">
+   contenido de menu
+   <p-panelMenu [model]="items" [style]="{'width':'300px'}"></p-panelMenu>
+</p-sidebar>
+<button type="text" (click)="display = true" pButton icon="fa-external-link-square" label="Mostrar menu"></button>
+
+
+<p-galleria  styleClass="completa" [images]="images" panelWidth="600" panelHeight="400"  [showCaption]="true"></p-galleria>
+
+<p-dialog header="ejemplo de drag an drop" [(visible)]="Mostrar">
+      
+
+    <h3>Drag and Drop to DataTable</h3>
+   
+  <div pDraggable="dd">Draggable Div</div>
+
+  <div pDroppable="dd">Droppable Div</div>
+
+
+
+</p-dialog>
+
+<button type="text" (click)="mostrarDialogo()" pButton icon="fa-external-link-square" label="drag and drop"></button>
