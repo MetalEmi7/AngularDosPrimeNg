@@ -11,3 +11,15 @@ Hacer cualquier tipo de cambio en el proyecto, como agregar un "hola mundo" en e
 Link de PrimeNg: https://www.primefaces.org/primeng/#/
 
 PD: Asi lo solucionamos en clase con el profe :P
+
+
+# Structural Directives
+Link: https://angular.io/guide/structural-directives
+
+ngIf: https://angular.io/api/common/NgIf
+ngFor y ngForOF: https://angular.io/api/common/NgForOf
+
+Consignas:
+1. Hacer ejemplos que se ven en el link pasado anteriormente, para facilitar el trabajo se pueden usar otras entidades ya conocidas, ejemplo: Users.
+
+2. Hacer al menos un ejemplo con ngSwitch.
